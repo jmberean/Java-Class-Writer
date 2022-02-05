@@ -1,0 +1,52 @@
+// class name
+public class Email{
+    // class attributes
+    String host;
+    String user;
+    String password;
+    String to;
+    // default class construcor
+    public Email(){
+    }
+    // class constructor
+    public Email( String host, String user, String password, String to){
+        this.host = host;
+        this.user = user;
+        this.password = password;
+        this.to = to;
+    }
+    // class setters
+    public void setHost(String host){
+        this.host = host;
+    }
+    public void setUser(String user){
+        this.user = user;
+    }
+    public void setPassword(String password){
+        this.password = password;
+    }
+    public void setTo(String to){
+        this.to = to;
+    }
+    // class getters
+    public String getHost(){
+        return this.host;
+    }
+    public String getUser(){
+        return this.user;
+    }
+    public String getPassword(){
+        return this.password;
+    }
+    public String getTo(){
+        return this.to;
+    }
+    // toString()
+    public String toString(){
+        return ("host = " + this.host  + " user = " + this.user  + " password = " + this.password  + " to = " + this.to);
+    }
+    // equals()
+    public boolean equals(Email obj){
+        return (this.host == obj.host && this.user == obj.user && this.password == obj.password && this.to == obj.to);
+    }
+}
